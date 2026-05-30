@@ -225,3 +225,38 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* About Section */
+.about-section{
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.about-section h1{
+    margin-bottom:30px;
+    color:#2563eb;
+}
+
+.about-image{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.about-section p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.education-box{
+    margin-top:30px;
+    padding:25px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+} 
