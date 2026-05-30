@@ -260,3 +260,21 @@ footer {
     border-radius:15px;
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
 } 
+
+/* Blog Section */
+.projects-page {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.projects-page h1 {
+  color: #2563eb;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  margin-bottom: 35px;
+  color: #555;
+} 
+
