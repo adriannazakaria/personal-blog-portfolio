@@ -3,51 +3,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Portfolio</title>
+  <title>Skills & Projects | Adrianna Zakaria</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
   <nav class="navbar">
-    <h2 class="logo">MyPortfolio</h2>
+    <h2 class="logo">
+      <a href="index.html">My Portfolio</a>
+    </h2>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="projects-page">
-  <h1>My Projects</h1>
-  <p class="page-subtitle">A collection of software development and academic projects.</p>
+<!-- PROJECTS SECTION -->
+<section class="projects-page reveal">
+  <div class="section-title">
+    <h1>My Projects</h1>
+    <p>
+      Here are some academic projects that demonstrate my technical skills and practical
+      experience in web application development.
+    </p>
+  </div>
 
-  <div class="project-container">
-    <div class="project-card">
-      <h3>BookCorner</h3>
-      <p>A web-based platform developed using CodeIgniter 4, PHP, MySQL, HTML, CSS, and JavaScript that facilitates the buying and 
-        selling of used textbooks and academic materials among university students, promoting affordable access to educational resources.</p>
-    </div>
+  <div class="projects-grid">
 
-    <div class="project-card">
+    <div class="project-box reveal">
+      <img src="images/eatsmart.png" alt="EatSmart Project" class="project-img">
+
       <h3>EatSmart</h3>
-      <p>A web-based calorie tracking system developed using CodeIgniter 4, PHP, MySQL, HTML, CSS, and JavaScript that enables users to 
-        monitor their daily calorie intake, track nutritional information, and support healthier dietary habits.</p>
+
+      <p>
+        A web-based nutrition management system designed to support users in monitoring their dietary intake.
+      </p>
+
+      <div class="project-tags">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <button class="view-btn" onclick="openProjectModal('eatsmart')">
+        View Project
+      </button>
     </div>
 
-    <div class="project-card">
-      <h3>University Event Management</h3>
-      <p>A web-based event management system developed using PHP, MySQL, HTML, CSS, and JavaScript that facilitates the planning, organization, 
-        and management of university events, ensuring efficient coordination between organizers and participants.</p>
+    <div class="project-box reveal">
+      <img src="images/bookcorner.png" alt="BookCorner Project" class="project-img">
+
+      <h3>BookCorner</h3>
+
+      <p>
+        A web-based marketplace for university students to exchange and purchase second-hand academic books.
+      </p>
+
+      <div class="project-tags">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+
+      <button class="view-btn" onclick="openProjectModal('bookcorner')">
+        View Project
+      </button>
     </div>
+
   </div>
 </section>
 
+<!-- SKILLS SECTION -->
+<section class="tech-stack-page reveal">
+
+  <div class="section-title">
+    <h1>My Tech Stack</h1>
+
+    <p>
+      These are the technologies and software development concepts that I have used
+      throughout my academic projects and web development practice.
+    </p>
+  </div>
+
+  <div class="tech-slider">
+    <div class="tech-track">
+
+      <div class="tech-item">
+        <i class="devicon-php-plain"></i>
+        <p>PHP</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-java-plain"></i>
+        <p>Java</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-javascript-plain"></i>
+        <p>JavaScript</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-python-plain"></i>
+        <p>Python</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-html5-plain"></i>
+        <p>HTML</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-css3-plain"></i>
+        <p>CSS</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-bootstrap-plain"></i>
+        <p>Bootstrap</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-codeigniter-plain"></i>
+        <p>CodeIgniter 4</p>
+      </div>
+
+      <div class="tech-item text-icon">
+        <span>API</span>
+        <p>RESTful API</p>
+      </div>
+
+      <div class="tech-item">
+        <i class="devicon-mysql-plain"></i>
+        <p>MySQL</p>
+      </div>
+
+      <div class="tech-item text-icon">
+        <span>OOP</span>
+        <p>OOP</p>
+      </div>
+
+      <div class="tech-item text-icon">
+        <span>SDLC</span>
+        <p>SDLC</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 <footer>
-  <p>© 2026 Adrianna Zakaria. All Rights Reserved.</p>
+  <div>
+    <h3>Adrianna Zakaria</h3>
+    <p>Always learning, always improving, and always ready for new challenges.</p>
+  </div>
+
+  <div>
+    <h3>Quick Links</h3>
+    <a href="about.html">About</a>
+    <a href="blog.html">Skills</a>
+    <a href="blog.html">Projects</a>
+  </div>
+
+  <div>
+    <h3>Connect</h3>
+
+    <div class="social-icons">
+      <a href="https://github.com/adriannazakaria" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/adriannasofeazakaria" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="mailto:nuradriannasofeazakaria@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
 </footer>
 
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-box">
+    <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+
+    <h2 id="modalTitle"></h2>
+
+    <div class="modal-section">
+      <h3>Overview Project</h3>
+      <p id="modalOverview"></p>
+    </div>
+
+    <div class="modal-section">
+      <h3>Technologies Used</h3>
+      <p id="modalTech"></p>
+    </div>
+
+    <div class="modal-section">
+      <h3>Features</h3>
+      <p id="modalFeatures"></p>
+    </div>
+
+    <div class="modal-section">
+      <h3>Outcome</h3>
+      <p id="modalOutcome"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
-</html> 
+</html>
+
+
+
