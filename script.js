@@ -1,4 +1,4 @@
-//index
+//Scroll reveal animation
 window.addEventListener("scroll", revealSections);
 
 function revealSections() {
@@ -18,121 +18,68 @@ function revealSections() {
 revealSections();
 
 
-function showSkills(category) {
-  const skillDetails = document.getElementById("skill-details");
-
-  const skills = {
-    programming: `
-      <h3>Programming Languages</h3>
-      <div class="skill-icons">
-        <div class="skill-item"><i class="devicon-php-plain"></i><p>PHP</p></div>
-        <div class="skill-item"><i class="devicon-java-plain"></i><p>Java</p></div>
-        <div class="skill-item"><i class="devicon-javascript-plain"></i><p>JavaScript</p></div>
-        <div class="skill-item"><i class="devicon-python-plain"></i><p>Python</p></div>
-      </div>
-    `,
-
-    frontend: `
-      <h3>Front-End Development</h3>
-      <div class="skill-icons">
-        <div class="skill-item"><i class="devicon-html5-plain"></i><p>HTML</p></div>
-        <div class="skill-item"><i class="devicon-css3-plain"></i><p>CSS</p></div>
-        <div class="skill-item"><i class="devicon-javascript-plain"></i><p>JavaScript</p></div>
-      </div>
-    `,
-
-    backend: `
-      <h3>Back-End Development</h3>
-      <div class="skill-icons">
-        <div class="skill-item"><i class="devicon-php-plain"></i><p>PHP</p></div>
-        <div class="skill-item"><i class="devicon-codeigniter-plain"></i><p>CodeIgniter 4</p></div>
-      </div>
-    `,
-
-    database: `
-      <h3>Database</h3>
-      <div class="skill-icons">
-        <div class="skill-item"><i class="devicon-mysql-plain"></i><p>MySQL</p></div>
-      </div>
-    `,
-
-    software: `
-      <h3>Software Development</h3>
-      <div class="skill-icons">
-        <div class="skill-item"><i class="devicon-git-plain"></i><p>Git</p></div>
-        <div class="skill-item"><i class="devicon-github-original"></i><p>GitHub</p></div>
-      </div>
-    `
-  };
-
-  skillDetails.innerHTML = skills[category];
-}
-
-//Projects
+//Project popup modal
 function openProjectModal(project) {
   const modal = document.getElementById("projectModal");
 
   const title = document.getElementById("modalTitle");
-  const overview = document.getElementById("modalOverview");
-  const tech = document.getElementById("modalTech");
+  const purpose = document.getElementById("modalPurpose");
   const features = document.getElementById("modalFeatures");
+  const tech = document.getElementById("modalTech");
   const outcome = document.getElementById("modalOutcome");
 
   const projectData = {
     eatsmart: {
       title: "EatSmart",
-      overview:
-        "EatSmart is a web-based nutrition and meal planning system designed to help users manage healthy eating habits and receive personalized food recommendations.",
-      tech: [
+      purpose:
+        "EatSmart is a web-based nutrition and meal planning system developed to promote healthier eating habits and improve awareness of daily nutritional intake. The system was designed to help users organize their meals, monitor calorie consumption, and access nutrition-related information in amore convenient and structured way. By providing personalized recommendations and health-focused features, EatSmart encourages users to make informed dietary decisions and maintain a balanced lifestyle.",
+      features: [
+        "Supports role-based access control with dedicated functionalities for Admin, Nutritionist, and User.", 
+        "Generates personalized calorie recommendations through BMI calculation and health assessment.", 
+        "Maintains a comprehensive food database with detailed nutritional information and calorie values.",
+        "Enables users to track health progress and monitor daily calorie consumption through an iterative dashboard.",
+      ],
+        tech: [
+        "CodeIgniter 4",
         "PHP", 
         "MySQL", 
         "HTML", 
         "CSS", 
-        "JavaScript"
-      ],
-      features: [
-        "User-friendly meal planning interface", 
-        "food recommendation section", 
-        "database storage, and nutrition-related information management",
       ],
       outcome:
-        "This project improved my understanding of database integration, web interface design, and building practical systems that support user health and lifestyle needs."
+        "The system provides users with a more structured approach to managing their dietary habits, enabling them to make informed food choices and monitor their nutritional intake more effectively."
     },
 
     bookcorner: {
       title: "BookCorner",
-      overview:
-        "BookCorner is a web-based online bookstore system that allows users to browse books and manage book-related information through a simple web interface.",
-      tech: [
+      purpose:
+        "BookCorner is a web-based platform developed to support students in buying and selling pre-owned academic books at affordable prices. The project aims to reduce the financial burden of purchasing educational material while encouraging the reuse of books within the student community. By providing a centralized marketplace, the system helps students easily access learning resources and connect with other students who wish to exchange or sell books.",
+      features: [
+        "Supports role-based access control with dediacted functionalities for Admin, Seller, and Buyer.", 
+        "Allows users to browse and search book listings based on title, category, or academic subject.",
+        "Enable students to create, update, and manage book advertisements for pre-owned academic materials.", 
+        "Facilitates communication between buyers and sellers to simplify the book purchasing process.",
+      ],
+        tech: [
+        "CodeIgniter 4",
         "PHP", 
         "MySQL", 
         "HTML", 
-        "CSS"
-      ],
-      features: [
-        "Book listing", 
-        "book details display",
-        "user-friendly navigation", 
-        "order-related pages",
-        "database management",
+        "CSS",
       ],
       outcome:
-        "This project helped me strengthen my skills in web development, database design, and creating structured web applications for online business purposes."
+        "The system provides students with a convenient and accessible platform to buy and sell pre-owned academic books, helping them reduce educational expenses while promoting the reuse of learning materials."
     }
   };
 
   title.textContent = projectData[project].title;
-  overview.textContent = projectData[project].overview;
+  purpose.textContent = projectData[project].purpose;
 
+  features.innerHTML = 
+    "<ul><li>" + projectData[project].features.join("</li><li>") + "</li></ul>";
+  
   tech.innerHTML =
-  "<ul><li>" +
-  projectData[project].tech.join("</li><li>") +
-  "</li></ul>";
-
-features.innerHTML =
-  "<ul><li>" +
-  projectData[project].features.join("</li><li>") +
-  "</li></ul>";
+    "<ul><li>" + projectData[project].tech.join("</li><li>") + "</li></ul>";
 
   outcome.textContent = projectData[project].outcome;
 

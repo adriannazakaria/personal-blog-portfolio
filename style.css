@@ -212,45 +212,6 @@ body {
   font-size: 21px;
 }
 
-/* PROJECTS */
-.featured {
-  padding: 70px 10%;
-  text-align: center;
-  background: #fff8ef;
-}
-
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 35px;
-}
-
-.project-card {
-  background: #fff;
-  border: 3px solid #222;
-  border-radius: 12px;
-  padding: 30px;
-  text-align: left;
-  box-shadow: 7px 7px 0 #ffc7d1;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 10px 10px 0 #ff9fb0;
-}
-
-.project-card h3 {
-  font-size: 23px;
-  color: #d6336c;
-  margin-bottom: 15px;
-}
-
-.project-card p {
-  line-height: 1.7;
-}
-
 /* FOOTER */
 footer {
   background: #111;
@@ -476,8 +437,6 @@ footer a:hover {
 }
 
 /* BLOG PAGE */
-
-.skills-page,
 .projects-page {
     padding: 90px 10%;
     background: #fff;
@@ -503,36 +462,6 @@ footer a:hover {
     margin: auto;
     line-height: 1.8;
     font-size: 17px;
-}
-
-.skills-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.skill-box {
-    background: #fff8ef;
-    border: 2px solid #222;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 7px 7px 0 #ffc7d1;
-    transition: 0.3s;
-}
-
-.skill-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 10px 10px 0 #ff9fb0;
-}
-
-.skill-box h3 {
-    color: #d6336c;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
-.skill-box p {
-    line-height: 1.8;
 }
 
 .projects-grid {
@@ -650,7 +579,7 @@ footer a:hover {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-45%);
+    transform: translateX(-50%);
   }
 }
 
@@ -679,19 +608,6 @@ footer a:hover {
 .view-btn:hover {
   transform: translateY(-4px);
   box-shadow: 7px 7px 0 #222;
-}
-
-.project-details {
-  display: none;
-  margin-top: 20px;
-  padding: 18px;
-  background: #fff8ef;
-  border-left: 4px solid #d6336c;
-  border-radius: 8px;
-}
-
-.project-details p {
-  margin-bottom: 0;
 }
 
 /* PROJECT POPUP MODAL */
