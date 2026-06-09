@@ -2,92 +2,126 @@
 
 ## Overview
 
-This project is a personal portfolio website developed to showcase my background, technical skills, academic projects, and contact information. The website serves as a digital portfolio that highlights my journey as a Software Development student and demonstrates my web development capabilities through a clean, responsive, and user-friendly interface.
+This project is a personal portfolio website developed as part of the CSD34203 Special Topics in Software Development course. The website serves as a digital portfolio to showcase my background, technical skills, academic projects, and contact information.
+
+The portfolio was built using HTML, CSS, and JavaScript with a focus on responsive design, user-friendly navigation, and interactive features.
+
+---
 
 ## Features
 
-- Responsive Home Page with personal introduction
-- About Me section with educational background and career objectives
-- Technical Skills & Tools showcase
-- Project Portfolio section with detailed project descriptions
-- Interactive project popup modal
-- Contact Information section with social media links
-- Responsive design for different screen sizes
-- Smooth animations and interactive user interface
+- Responsive Home Page
+- About Me Section
+- Resume Download Feature
+- Technical Skills & Tools Showcase
+- Project Portfolio Section
+- Interactive Project Popup Modal
+- Contact Information Page
+- GitHub and LinkedIn Integration
+- Responsive Design for Desktop and Mobile Devices
 
-## Pages
-
-### Home
-Provides a brief introduction, profile image, and navigation to other sections of the portfolio.
-
-### About
-Introduces personal background, academic journey, interests, and career aspirations.
-
-### Skills & Projects
-Displays technical skills, tools, technologies, and selected academic projects including:
-- EatSmart
-- BookCorner
-
-### Contact
-Provides contact details and links to professional platforms such as GitHub and LinkedIn.
+---
 
 ## Technologies Used
 
-### Front-End Development
+### Front-End
 - HTML5
 - CSS3
 - JavaScript
 
-### Development Tools
+### Tools
 - Visual Studio Code
 - Git
 - GitHub
 
-### Concepts Applied
+### Technical Skills Demonstrated
 - Responsive Web Design
 - User Interface Design
 - Version Control
 - Software Development Principles
 
-## Project Structure
+---
 
-text
-Personal-Blog-Portfolio/
-│
-├── index.html
-├── about.html
-├── blog.html
-├── contact.html
-├── style.css
-├── script.js
-│
-├── images/
-│   ├── profile.jpeg
-│   ├── profile2.jpeg
-│   ├── eatsmart.png
-│   └── bookcorner.png
-│
-└── README.md
+## Project Pages
 
+### Home Page
+Provides a brief introduction, profile image, and navigation to other sections.
+
+### About Page
+Displays personal background, educational information, career goals, and resume download functionality.
+
+### Skills & Projects Page
+Showcases technical skills, technologies, and academic projects including:
+- EatSmart
+- BookCorner
+
+### Contact Page
+Provides contact information together with GitHub, LinkedIn, and email links.
+
+---
+
+## Screenshots
+
+### Home Page
+![Home Page](images/homepage.png)
+
+### About Page
+![About Page](images/aboutpage.png)
+
+### Skills & Projects Page
+![Projects Page](images/projectpage.png)
+
+### Contact Page
+![Contact Page](images/contactpage.png)
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/adriannazakaria/personal-blog-portfolio.git
+```
+
+2. Open the project folder
+
+3. Open `index.html` in your browser
+
+---
+
+## Live Demo
+
+GitHub Pages:
+
+https://adriannazakaria.github.io/personal-blog-portfolio/
+
+---
+
+## Repository
+
+GitHub Repository:
+
+https://github.com/adriannazakaria/personal-blog-portfolio
+
+---
 
 ## Learning Outcomes
 
 Through this project, I gained practical experience in:
 
-- Building responsive web interfaces
-- Structuring multi-page websites
-- Implementing interactive features using JavaScript
+- Designing responsive web interfaces
+- Building multi-page websites
+- Implementing interactive JavaScript features
 - Managing project versions using Git and GitHub
-- Designing user-friendly layouts and navigation
+- Creating a professional online portfolio
+
+---
 
 ## Author
 
-*Nur Adrianna Sofea binti Zakaria*
+**Nur Adrianna Sofea binti Zakaria**
 
 Bachelor of Computer Science (Software Development) with Honours
 
 Universiti Sultan Zainal Abidin (UniSZA)
-
-## Repository Information
-
-This project is maintained using Git and GitHub to demonstrate version control practices, project organization, and continuous improvement throughout the development process.
