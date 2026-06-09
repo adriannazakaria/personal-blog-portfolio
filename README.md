@@ -13,9 +13,9 @@ The portfolio was built using HTML, CSS, and JavaScript with a focus on responsi
 - Responsive Home Page
 - About Me Section
 - Resume Download Feature
-- Technical Skills & Tools Showcase
 - Project Portfolio Section
 - Interactive Project Popup Modal
+- Technical Skills & Tools Showcase
 - Contact Information Page
 - GitHub and LinkedIn Integration
 - Responsive Design for Desktop and Mobile Devices
@@ -63,16 +63,24 @@ Provides contact information together with GitHub, LinkedIn, and email links.
 ## Screenshots
 
 ### Home Page
-![Home Page](images/homepage.png)
+![Home Page](images/homepage1.png)
+
+![Home Page](images/homepage2.png)
 
 ### About Page
-![About Page](images/aboutpage.png)
+![About Page](images/aboutpage1.png)
 
-### Skills & Projects Page
-![Projects Page](images/projectpage.png)
+![About Page](images/aboutpage2.png)
+
+### Blog Page
+![Projects Page](images/blogpage1.png)
+
+![Skills Page](images/blogpage2.png)
 
 ### Contact Page
-![Contact Page](images/contactpage.png)
+![Contact Page](images/contactpage1.png)
+
+![Contact Page](images/contactpage2.png)
 
 ---
 
@@ -84,25 +92,28 @@ Provides contact information together with GitHub, LinkedIn, and email links.
 git clone https://github.com/adriannazakaria/personal-blog-portfolio.git
 ```
 
-2. Open the project folder
+2. Open the project folder in Visual Studio Code
 
-3. Open `index.html` in your browser
+
+3. Open `index.html`
+
+
+4. Run the website using Live Server or open it directly in a web browser
+
+
+5. Navigate through Home, About, Blog, and Contact pages
 
 ---
 
-## Live Demo
+## Demo Link
 
-GitHub Pages:
-
-https://adriannazakaria.github.io/personal-blog-portfolio/
-
----
-
-## Repository
-
-GitHub Repository:
+- GitHub Repository:
 
 https://github.com/adriannazakaria/personal-blog-portfolio
+
+- Live Website (Github Pages) :
+
+https://adriannazakaria.github.io/personal-blog-portfolio/
 
 ---
 
