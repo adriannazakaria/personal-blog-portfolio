@@ -802,19 +802,28 @@ footer a:hover {
     display: flex;
   }
 
-  .nav-links a {
-    width: 100%;
-    padding: 15px 0;
-    font-size: 18px;
-  }
+  .nav-links li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  display: block;
+  width: 85%;
+  padding: 18px 0;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 18px;
+}
 
 .nav-links a:hover,
 .nav-links a.active {
-  width: 100%;
+  width: 85%;
   background: #ff9fb0;
   border: 2px solid #222;
-  border-radius: 12px;
-  box-shadow: 4px 4px 0 #222;
+  border-radius: 18px;
+  box-shadow: 5px 5px 0 #222;
 }
 
   .hero {
