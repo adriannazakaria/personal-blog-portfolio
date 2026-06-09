@@ -90,5 +90,10 @@ function closeProjectModal() {
   document.getElementById("projectModal").style.display = "none";
 }
 
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
+}
+
 
 
